@@ -317,7 +317,7 @@ build_current_csv <- function(pkg_names, file = "")
   # scrape first package in the list of package names
   aux_url = sprintf("http://cran.r-project.org/web/packages/%s/index.html",
                     pkg_names)
-  aux = scrape_package(aux_url)
+  aux = scrape_current_pkg(aux_url)
   aux_df = data.frame(aux, stringsAsFactors = FALSE)
   table_colnames = paste(names(aux_df), collapse = ",")
 
@@ -333,7 +333,7 @@ build_current_csv <- function(pkg_names, file = "")
     {
       pkg_url = sprintf("http://cran.r-project.org/web/packages/%s/index.html",
                         pkg_names[i])
-      aux = scrape_package(pkg_url)
+      aux = scrape_current_pkg(pkg_url)
       aux_df = data.frame(aux, stringsAsFactors = FALSE)
       # populate following rows in file
       write.table(aux_df, file = file, sep = ',', 

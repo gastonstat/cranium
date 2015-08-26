@@ -1,16 +1,16 @@
 Package: cranium
 Type: Package
-Title: Craniography Tools: Exploring R packages in CRAN
+Title: Craniography Tools for Exploring R packages in CRAN
 Version: 0.1.0
-Date: 2014-09-01
-Authors@R: c(
-    person("Gaston", "Sanchez",
-    email = "gaston.stat@gmail.com", role = c("aut", "cre")))
-Description: package dedicated to parse the Comprehensive R Archive Network
+Date: 2015-08-25
+Author: Gaston Sanchez
+Maintainer: Gaston Sanchez <gaston.stat@gmail.com>
+Description: package for parsing the Comprehensive R Archive Network
     (CRAN), and scrape both packages description as well as old archive
     information.
 Depends:
-    R (>= 2.15.0),
+    R (>= 2.15.0)
+Imports:
     XML,
     stringr,
     tm,
@@ -22,3 +22,4 @@ Collate:
     'download-cran-html.R'
     'parse-current.R'
     'parse-previous.R'
+    'cranium.R'

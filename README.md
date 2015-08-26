@@ -27,16 +27,16 @@ librayr(cranium)
 
 
 
-## Description
+### Description
 
 ```"cranium"``` allows you to do three major tasks:
 
-- Parse packages in CRAN available (current versions)
-- Parse packages in CRAN Archive (previous versions)
-- Build JSON structure to plot with ```D3.js```
+- Parse a given package in CRAN available (current versions)
+- Parse a given package in CRAN Archive (previous versions)
+- Build JSON structure of a package dependencies to plot with ```D3.js```
 
 
-## Scraping the attributes of a package current version description
+### Scraping the attributes of a package current version description
 
 To parse the description of an R package's current version, pass the name of the package you are interested in to the ```scrape_current_pkg()``` function. The output is a list with all the attributes of the package's description:
 

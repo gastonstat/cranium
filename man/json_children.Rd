@@ -21,7 +21,7 @@
 }
 \examples{
 \dontrun{
-  plspm_depends = c("R (> 3.0.1), amap, diagram, tester, turner")
+  plspm_depends = c("amap, diagram, tester, turner")
   json_children(plspm_depends)
 }
 }

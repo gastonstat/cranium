@@ -9,7 +9,7 @@
 #' @export
 #' @examples
 #' \dontrun{
-#'   plspm_depends = c("R (> 3.0.1), amap, diagram, tester, turner")
+#'   plspm_depends = c("amap, diagram, tester, turner")
 #'   split_pkg_attr(plspm_depends)
 #' }
 split_pkg_attr <- function(pkg_attr)
@@ -57,7 +57,7 @@ add_quotes <- function(str)
 #' @export
 #' @examples
 #' \dontrun{
-#'   plspm_depends = c("R (> 3.0.1), amap, diagram, tester, turner")
+#'   plspm_depends = c("amap, diagram, tester, turner")
 #'   json_children(plspm_depends)
 #' }
 json_children <- function(pkg_attribute)
@@ -85,9 +85,10 @@ json_children <- function(pkg_attribute)
 #' (obtained from output in \code{\link{scrape_current_pkg}})
 #' @param file name of file to write the JSON tree
 #' @export
+#' @examples
 #' \dontrun{
 #'   plspm_deps = list(
-#'     depends = c("R (≥ 3.0.1), amap, diagram, tester, turner"),
+#'     depends = c("amap, diagram, tester, turner"),
 #'     imports = NA,
 #'     suggests = c("plsdepot, FactoMineR, ggplot2, reshape, testthat, knitr"),
 #'     revdepends = c("pathmox"),

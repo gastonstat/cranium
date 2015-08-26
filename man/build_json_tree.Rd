@@ -15,4 +15,18 @@
   Builds a Tree structure under JSON format representing
   the dependencies and reverse dependencies of an R package
 }
+\examples{
+\dontrun{
+  plspm_deps = list(
+    depends = c("amap, diagram, tester, turner"),
+    imports = NA,
+    suggests = c("plsdepot, FactoMineR, ggplot2, reshape, testthat, knitr"),
+    revdepends = c("pathmox"),
+    revimports = NA,
+    revsuggests = c("matrixpls, plsdepot")
+  )
+
+  build_json_tree(plspm_deps, file = "toy_json_tree.json")
+}
+}
 
